@@ -21,3 +21,7 @@ structure.
 3. There are only 20 hoodies available, so in case the 20 hoodies available have been already assigned, proceed
 to only assign the Backpacks and T-shirts to the other employees. 
 
+## Solution
+
+### Data base
+
