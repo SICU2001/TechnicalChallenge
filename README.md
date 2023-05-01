@@ -68,10 +68,17 @@ for(int i=0; i<N; i++){
         cout << "   " << i+1 << "           " << assignedGifts[i] << endl;
  }
 ```
+### Output examples
+With 10 employees:
 
 ![image](https://user-images.githubusercontent.com/84815840/235420163-a4115b10-21a3-4548-ba54-b5187cb3cdb9.png)
 
+With 60 employees:
+
 ![image](https://user-images.githubusercontent.com/84815840/235420282-425b809d-85ad-483b-b64c-c0716531e52a.png)
+
+![image](https://user-images.githubusercontent.com/84815840/235420591-bd7273df-0897-491f-ad9e-9c95f7f23464.png)
+
 
 
 ## Consideration of possible scenarios and Optimization
