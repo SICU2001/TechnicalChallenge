@@ -32,3 +32,7 @@ git status
 git add
 git commit
 ```
+
+
+
+## Consideration of possible scenarios and Optimization
