@@ -25,7 +25,7 @@ to only assign the Backpacks and T-shirts to the other employees.
 For this challenge I will use the programming language C++. The implementation is included in the *KalypsoChallenge.cpp* file in this repository. 
 
 ### Data base
-I will use a list of strings, since there are no employee names, it is only necessary to assign to an employee number (index in the list), a gift. In this case the gift will be represented by a string: "Backpack", "T-shirt" or "Hoodie". Other data we will collect in variables will be the number of employees *N* and the number or hoodies we have assigned at the moment, starting by 0. So we ask for this data and then create the list for the data base.
+I will use a list of strings, since there are no employee names, it is only necessary to assign to an employee number (index in the list), a gift. In this case the gift will be represented by a string: "Backpack", "T-shirt" or "Hoodie". Other data we will collect in variables will be the number of employees *N* and the number or hoodies we have assigned at the moment, starting by 0. So we ask for this data and then create the list of strings for the data base.
 
 ```
 int N, hoodies = 0;
@@ -35,7 +35,7 @@ cin >> N;
 
 string assignedGifts[N];
 ```
-
+### Gift assignment
 
 
 ## Consideration of possible scenarios and Optimization
