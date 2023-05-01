@@ -37,5 +37,24 @@ string assignedGifts[N];
 ```
 ### Gift assignment
 
+The first step for the gift assignment will be store the possible gifts in an array.
+
+```
+string gifts[3] = {"Backpack", "T-shirt", "Hoodie"};
+```
+Then, we will do a for cycle in the employees for assign a gift to each one. And here we have two possiblities when assigning a gift to the i-th employee. We can have hoodies left or not. This will depend on the number of hoodies that we have assigned so far. If it is less of 20 then we have hoodies left otherwise no. And in the case we have hoodies left we generate a random number: 0, 1 or 2 to decide the gift we are assigning from the gifts array. If the assigned gift is a hoodie then count it in the respective variable. Finally we store the selection in the database and continue with the next employee.
+
+```
+for(int i=0; i<N; i++){
+       
+        if(hoodies < 20){
+            
+            int gift = rand() % 3;
+            
+            assignedGifts[i] = gifts[gift];
+  
+            if(assignedGifts[i] == "Hoodie") hoodies++;
+```
+
 
 ## Consideration of possible scenarios and Optimization
