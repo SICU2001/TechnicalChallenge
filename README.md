@@ -52,14 +52,14 @@ for(int i=0; i<N; i++){
             if(assignedGifts[i] == "Hoodie") hoodies++; 
 ```
 
-In the case we do not have hoodies left we generate a random number: 0, 1 to decide the gift we are assigning from the gifts array, because 2 is not an option anymore. We store the selection in the database and continue with the next employee until finishing with the N employees.
+In the case we do not have hoodies left we generate a random number: 0, 1 to decide the gift we are assigning from the gifts array, because 2 is not an option anymore. We store the selection in the database and continue with the next employee until finishing with the *N* employees.
 
 ```
        }else{ 
               int gift = rand() % 2;
               assignedGifts[i] = gifts[gift];
         }
-    }
+}
 ```
 
 ## Consideration of possible scenarios and Optimization
