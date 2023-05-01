@@ -7,7 +7,7 @@ There are 3 possible gifts:
 * Backpack
 * T-shirt
 * Hoodie
-* 
+
 We would like your help as an intern to generate the pseudocode to display the final list of employees and the gifts that
 were assigned to them.
 
