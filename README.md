@@ -79,6 +79,12 @@ With 60 employees:
 
 ![image](https://user-images.githubusercontent.com/84815840/235420591-bd7273df-0897-491f-ad9e-9c95f7f23464.png)
 
-
+Note that employee number 51 is assigned the last hoodie and no more hoodies are given away after that.
 
 ## Consideration of possible scenarios and Optimization
+
+The presented assignment method is functional and complies with assigning the three different gifts to a variable number of employees, in addition to not assigning more than 20 hoodies. The time complexity is O(n) because we iterate throughout the employees assigning gifts with a time constant method (rand) and then displaying the result. This time complexity can not be improved, because we necessarily need to cycle through the employees in the database. The space complexity is O(n) too because we are asked to store the gifts for each employee. 
+
+We can not optimize time with other method, and we could only optimize space if we did not store the assignation in a data base, just print it once we decide and keep track of the number of hoodies with just one variable as we are currently doing. But if we want the data base then space complexity must be at least O(n) too.
+
+
