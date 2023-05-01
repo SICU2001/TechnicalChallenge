@@ -53,7 +53,7 @@ for(int i=0; i<N; i++){
             
             assignedGifts[i] = gifts[gift];
   
-            if(assignedGifts[i] == "Hoodie") hoodies++;
+            if(assignedGifts[i] == "Hoodie") hoodies++; 
 ```
 
 
