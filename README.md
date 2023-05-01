@@ -1,25 +1,21 @@
 # Technical Challenge
 
-The Kalypso's Americas Innovation Center (AIC) is getting ready for its next opening anniversary. A system needs to be
-generated to randomly distribute one gift to each one of the N current employees in Mexico.
+The Kalypso's Americas Innovation Center (AIC) is getting ready for its next opening anniversary. A system needs to be generated to randomly distribute one gift to each one of the N current employees in Mexico.
 
 There are 3 possible gifts:
 * Backpack
 * T-shirt
 * Hoodie
 
-We would like your help as an intern to generate the pseudocode to display the final list of employees and the gifts that
-were assigned to them.
+We would like your help as an intern to generate the pseudocode to display the final list of employees and the gifts that were assigned to them.
 
 Here are the conditions to consider for developing the pseudocode:
 
-**1.** Use any data structure (array, list, queue, stack, hashtable, tree, etcetera) to store the 3 different gifts. They
-will act as a "database" that can be accessed to retrieve the information. Explain why you used that data
-structure.
+**1.** Use any data structure (array, list, queue, stack, hashtable, tree, etcetera) to store the 3 different gifts. They will act as a "database" that can be accessed to retrieve the information. Explain why you used that data structure.
 
 **2.** Use a cycle to display (print) a list with the number of the employee (1 to #) and the gift assigned to her/him.
-**3.** There are only 20 hoodies available, so in case the 20 hoodies available have been already assigned, proceed
-to only assign the Backpacks and T-shirts to the other employees. 
+
+**3.** There are only 20 hoodies available, so in case the 20 hoodies available have been already assigned, proceed to only assign the Backpacks and T-shirts to the other employees. 
 
 ## Solution
 For this challenge I will use the programming language C++. The implementation is included in the *KalypsoChallenge.cpp* file in this repository. 
@@ -58,8 +54,24 @@ In the case we do not have hoodies left we generate a random number: 0, 1 to dec
        }else{ 
               int gift = rand() % 2;
               assignedGifts[i] = gifts[gift];
-        }
+       }
 }
 ```
+### Display assignment
+
+We use another for cycle throughout the employees but this time for consulting the information of the data base once all the employees have an assigned gift and we print the result. We print the headers of the list first (Employee -> Gift).
+
+```
+cout << "   Employee    Gift" << endl;
+    
+for(int i=0; i<N; i++){
+        cout << "   " << i+1 << "           " << assignedGifts[i] << endl;
+ }
+```
+
+![image](https://user-images.githubusercontent.com/84815840/235420163-a4115b10-21a3-4548-ba54-b5187cb3cdb9.png)
+
+![image](https://user-images.githubusercontent.com/84815840/235420282-425b809d-85ad-483b-b64c-c0716531e52a.png)
+
 
 ## Consideration of possible scenarios and Optimization
